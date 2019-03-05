@@ -1,0 +1,30 @@
+{
+  "name": "performace",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "element-react": "^1.4.33",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-load-script": "0.0.6",
+    "react-render-html": "^0.6.0",
+    "react-scripts": "2.0.5",
+    "react-slick": "^0.23.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
