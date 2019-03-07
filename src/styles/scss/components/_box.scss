@@ -1,0 +1,15 @@
+.box {
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border-radius: 4px;
+    background-color: #FFF;
+    .box-content {
+        padding: 15px 20px 25px;
+        .title {
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0;
+            color: $color-primary;
+        }
+    }
+}
