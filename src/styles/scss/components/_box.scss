@@ -1,15 +1,81 @@
 .box {
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
     border-radius: 4px;
     background-color: #FFF;
+    overflow: hidden;
+    transition: all .2s linear;
+    transform: translateY(0px);
+    margin: 15px 0;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 1px 3px 0px rgba(0,0,0,.05);
+    }
     .box-content {
         padding: 15px 20px 25px;
-        .title {
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-            margin: 0;
-            color: $color-primary;
+        &_header {
+            position: relative;
+            .icon {
+                display: block;
+                width: 100%;
+                text-align: center;
+                > img {
+                    display: inline-block;
+                    width: 60%;
+                    height: auto;   
+                }
+            }
+
+        }
+        &_body {
+            .title {
+                color: $color-primary;
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                margin: 0;
+                min-height: 38px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+            p {
+                text-align: center;
+            }
         }
     }
+    &.strategy {
+        .btn {
+            background-color: $color-07;
+            &:hover {
+                background-color: darken($color: $color-07, $amount: 10%);
+            }
+        }
+    }
+    &.team {
+        .btn {
+            background-color: $color-03;
+            &:hover {
+                background-color: darken($color: $color-03, $amount: 10%);
+            }
+        }
+    }
+    &.single {
+        .btn {
+            background-color: $color-01;
+            &:hover {
+                background-color: darken($color: $color-01, $amount: 10%);
+            }
+        }
+    }
+    &.process {
+        .btn {
+            background-color: $color-04;
+            &:hover {
+                background-color: darken($color: $color-04, $amount: 10%);
+            }
+        }
+    }
+}
+
+#add-boxes {
+    margin-top: 10%;
 }

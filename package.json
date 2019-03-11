@@ -8,6 +8,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-load-script": "0.0.6",
+    "react-mfb": "^0.6.0",
     "react-render-html": "^0.6.0",
     "react-scripts": "^2.1.8",
     "react-slick": "^0.23.2"
